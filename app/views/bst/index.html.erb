@@ -1,4 +1,14 @@
-<pre><%= @value.inspect %></pre>
+<style>
+  ol li {
+    list-style-type: lower-alpha;
+  }
+</style>
+
+<ol>
+  <% @numbers.each do |number| %>
+    <li><%= number %></li>
+  <% end %>
+<ol>
 
 <form action="/" method="get">
   <input type="text" name="value" value="<%= @value %>" />
